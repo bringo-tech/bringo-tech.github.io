@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Bringo Tech</title>
+<title>Bringo Tech — Car Rental Website Experts</title>
 
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -13,87 +13,110 @@
 
 <body>
 
-<nav>
+<!-- NAV -->
+<nav class="nav">
   <div class="logo">Bringo Tech</div>
 
-  <div>
+  <div class="nav-right">
     <button onclick="setLang('en')">EN</button>
     <button onclick="setLang('fr')">FR</button>
-    <a class="nav-btn" href="https://wa.me/216XXXXXXXX">Contact</a>
+    <button onclick="setLang('ar')">AR</button>
+
+    <a href="https://wa.me/216XXXXXXXX" class="btn small">
+      Contact
+    </a>
   </div>
 </nav>
 
+<!-- HERO -->
 <header class="hero">
-  <h1 id="hero-title">
-    We build high-converting websites for car rental businesses
-  </h1>
+  <div class="hero-content">
+    <h1 id="title">
+      Build Trust. Get More Bookings. Grow Your Car Rental Business.
+    </h1>
 
-  <p id="hero-sub">
-    Get more bookings with a modern online presence.
-  </p>
+    <p id="subtitle">
+      We create clean, professional websites that make customers choose you.
+    </p>
 
-  <a class="btn" href="https://wa.me/216XXXXXXXX">Start Now</a>
+    <div class="hero-buttons">
+      <a href="https://wa.me/216XXXXXXXX" class="btn primary">
+        Talk With Us
+      </a>
+    </div>
+  </div>
 </header>
 
-<section>
-  <h2>Services</h2>
+<!-- TRUST STATS -->
+<section class="stats">
+  <div>
+    <strong>Fast Delivery</strong>
+    <span>Launch in a few days</span>
+  </div>
 
-  <div class="grid">
-    <div class="card">Website Design</div>
-    <div class="card">Booking Systems</div>
-    <div class="card">SEO Optimization</div>
+  <div>
+    <strong>Mobile First</strong>
+    <span>Perfect on all devices</span>
+  </div>
+
+  <div>
+    <strong>Client Focused</strong>
+    <span>Built to convert visitors</span>
   </div>
 </section>
 
+<!-- SERVICES -->
 <section>
-  <h2>Portfolio</h2>
-
-  <div class="grid">
-    <div class="card">Luxury Cars Rental — Tunis</div>
-    <div class="card">FastDrive — Online Booking</div>
-    <div class="card">EcoCars — Green Rentals</div>
-  </div>
-</section>
-
-<section>
-  <h2>Pricing</h2>
+  <h2 id="services-title">What We Do</h2>
 
   <div class="grid">
     <div class="card">
-      <h3>Starter</h3>
-      <p>Simple website</p>
-      <strong>$150</strong>
+      <h3>Website Creation</h3>
+      <p>Modern and professional design that reflects your brand.</p>
     </div>
 
     <div class="card">
-      <h3>Pro</h3>
-      <p>Website + booking</p>
-      <strong>$300</strong>
+      <h3>Online Booking</h3>
+      <p>Let your customers reserve cars easily and quickly.</p>
     </div>
 
     <div class="card">
-      <h3>Premium</h3>
-      <p>Full system + SEO</p>
-      <strong>$500</strong>
+      <h3>Visibility & Growth</h3>
+      <p>Help your business get found and trusted online.</p>
     </div>
   </div>
 </section>
 
+<!-- PORTFOLIO -->
 <section>
-  <h2>Testimonials</h2>
+  <h2 id="portfolio-title">Recent Work</h2>
 
-  <p class="testimonial">
-    “Our bookings doubled after working with Bringo Tech.”
+  <div class="grid">
+    <div class="card">Luxury Cars — Tunis</div>
+    <div class="card">DriveNow — Booking Platform</div>
+    <div class="card">EcoCars — Rental Website</div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="testimonial">
+  <p id="testimonial-text">
+    “Our clients trusted us more after we launched our new website.”
   </p>
 </section>
 
-<section class="cta-section">
-  <h2>Ready to grow?</h2>
-  <a class="btn" href="https://wa.me/216XXXXXXXX">Contact on WhatsApp</a>
+<!-- CTA -->
+<section class="cta">
+  <h2 id="cta-title">Let’s build something professional for your business</h2>
+
+  <a href="https://wa.me/216XXXXXXXX" class="btn primary">
+    Contact on WhatsApp
+  </a>
 </section>
 
+<!-- FOOTER -->
 <footer>
-  © 2026 Bringo Tech
+  © 2026 Bringo Tech — Professional Web Solutions
 </footer>
 
 <script src="script.js"></script>
