@@ -3,149 +3,100 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Bringo Tech</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Poppins', sans-serif;
-}
-
-body{
-  background:#0f172a;
-  color:white;
-}
-
-header{
-  padding:100px 20px;
-  text-align:center;
-  background:linear-gradient(135deg,#1e293b,#0f172a);
-}
-
-header h1{
-  font-size:50px;
-}
-
-header p{
-  margin-top:15px;
-  font-size:18px;
-  color:#cbd5e1;
-}
-
-.btn{
-  display:inline-block;
-  margin-top:25px;
-  padding:15px 35px;
-  background:#3b82f6;
-  color:white;
-  text-decoration:none;
-  border-radius:8px;
-  transition:0.3s;
-}
-
-.btn:hover{
-  background:#2563eb;
-}
-
-section{
-  padding:70px 20px;
-  max-width:1100px;
-  margin:auto;
-}
-
-h2{
-  text-align:center;
-  margin-bottom:40px;
-  font-size:32px;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-}
-
-.card{
-  background:#1e293b;
-  padding:25px;
-  border-radius:12px;
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:translateY(-5px);
-}
-
-footer{
-  text-align:center;
-  padding:30px;
-  color:#94a3b8;
-  font-size:14px;
-}
-</style>
 </head>
 
 <body>
 
-<header>
-  <h1>Bringo Tech</h1>
-  <p>We build high-converting websites for car rental agencies</p>
-  <a class="btn" href="https://wa.me/216XXXXXXXX">Get Clients Now</a>
+<nav>
+  <div class="logo">Bringo Tech</div>
+
+  <div>
+    <button onclick="setLang('en')">EN</button>
+    <button onclick="setLang('fr')">FR</button>
+    <a class="nav-btn" href="https://wa.me/216XXXXXXXX">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <h1 id="hero-title">
+    We build high-converting websites for car rental businesses
+  </h1>
+
+  <p id="hero-sub">
+    Get more bookings with a modern online presence.
+  </p>
+
+  <a class="btn" href="https://wa.me/216XXXXXXXX">Start Now</a>
 </header>
 
 <section>
-  <h2>Our Services</h2>
+  <h2>Services</h2>
+
+  <div class="grid">
+    <div class="card">Website Design</div>
+    <div class="card">Booking Systems</div>
+    <div class="card">SEO Optimization</div>
+  </div>
+</section>
+
+<section>
+  <h2>Portfolio</h2>
+
+  <div class="grid">
+    <div class="card">Luxury Cars Rental — Tunis</div>
+    <div class="card">FastDrive — Online Booking</div>
+    <div class="card">EcoCars — Green Rentals</div>
+  </div>
+</section>
+
+<section>
+  <h2>Pricing</h2>
+
   <div class="grid">
     <div class="card">
-      <h3>Custom Websites</h3>
-      <p>Modern, fast, and mobile-friendly websites tailored for rental businesses.</p>
+      <h3>Starter</h3>
+      <p>Simple website</p>
+      <strong>$150</strong>
     </div>
+
     <div class="card">
-      <h3>Online Booking</h3>
-      <p>Let your customers reserve cars directly from your website.</p>
+      <h3>Pro</h3>
+      <p>Website + booking</p>
+      <strong>$300</strong>
     </div>
+
     <div class="card">
-      <h3>SEO Optimization</h3>
-      <p>Rank on Google and attract more clients automatically.</p>
+      <h3>Premium</h3>
+      <p>Full system + SEO</p>
+      <strong>$500</strong>
     </div>
   </div>
 </section>
 
 <section>
-  <h2>Why Choose Us</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Fast Delivery</h3>
-      <p>Get your website ready in days, not weeks.</p>
-    </div>
-    <div class="card">
-      <h3>Professional Design</h3>
-      <p>We build websites that convert visitors into customers.</p>
-    </div>
-    <div class="card">
-      <h3>Affordable Pricing</h3>
-      <p>Perfect for small and growing car rental businesses.</p>
-    </div>
-  </div>
-</section>
+  <h2>Testimonials</h2>
 
-<section>
-  <h2>Get Started Today</h2>
-  <p style="text-align:center; color:#cbd5e1;">
-    Contact us now and start getting more bookings for your rental business.
+  <p class="testimonial">
+    “Our bookings doubled after working with Bringo Tech.”
   </p>
-  <div style="text-align:center;">
-    <a class="btn" href="https://wa.me/216XXXXXXXX">Contact on WhatsApp</a>
-  </div>
+</section>
+
+<section class="cta-section">
+  <h2>Ready to grow?</h2>
+  <a class="btn" href="https://wa.me/216XXXXXXXX">Contact on WhatsApp</a>
 </section>
 
 <footer>
-  © 2026 Bringo Tech — All rights reserved
+  © 2026 Bringo Tech
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
