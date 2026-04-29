@@ -1,12 +1,10 @@
-
-// ===== LANGUAGE DATA =====
 const translations = {
   en: {
     title: "Build Trust. Get More Bookings. Grow Your Car Rental Business.",
     subtitle: "We create clean, professional websites that make customers choose you.",
     services: "What We Do",
     portfolio: "Recent Work",
-    testimonial: "“Our clients trusted us more after we launched our new website.”",
+    testimonial: "Our clients trusted us more after launching their new website.",
     cta: "Let’s build something professional for your business"
   },
 
@@ -15,7 +13,7 @@ const translations = {
     subtitle: "Nous créons des sites modernes qui inspirent confiance.",
     services: "Nos Services",
     portfolio: "Nos Réalisations",
-    testimonial: "« Nos clients nous font plus confiance depuis notre nouveau site. »",
+    testimonial: "Nos clients nous font plus confiance après le nouveau site.",
     cta: "Construisons quelque chose de professionnel pour votre entreprise"
   },
 
@@ -24,25 +22,15 @@ const translations = {
     subtitle: "نصمم مواقع احترافية تجعل العملاء يختارونك",
     services: "خدماتنا",
     portfolio: "أعمالنا",
-    testimonial: "“زاد عدد العملاء بعد إطلاق الموقع الجديد”",
+    testimonial: "زاد عدد العملاء بعد إطلاق الموقع الجديد",
     cta: "دعنا نبني لك موقعًا احترافيًا"
   }
 };
 
-// ===== LANGUAGE SWITCH FUNCTION =====
 function setLang(lang){
-
-  // Change HTML lang attribute
   document.documentElement.lang = lang;
+  document.documentElement.dir = (lang === "ar") ? "rtl" : "ltr";
 
-  // Handle RTL for Arabic
-  if(lang === "ar"){
-    document.documentElement.dir = "rtl";
-  } else {
-    document.documentElement.dir = "ltr";
-  }
-
-  // Update text content
   document.getElementById("title").innerText = translations[lang].title;
   document.getElementById("subtitle").innerText = translations[lang].subtitle;
   document.getElementById("services-title").innerText = translations[lang].services;
@@ -51,5 +39,4 @@ function setLang(lang){
   document.getElementById("cta-title").innerText = translations[lang].cta;
 }
 
-// ===== OPTIONAL: DEFAULT LANGUAGE =====
 setLang("en");
