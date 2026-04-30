@@ -14,14 +14,17 @@
 <body>
 
 <nav class="nav">
-  <div class="logo">Bringo Tech</div>
+  <div class="logo">
+    <span class="logo-bringo">Bringo</span>
+    <span class="logo-tech">Tech</span>
+  </div>
 
   <div class="nav-right">
     <button onclick="setLang('en')">EN</button>
     <button onclick="setLang('fr')">FR</button>
     <button onclick="setLang('ar')">AR</button>
 
-    <a href="https://wa.me/216XXXXXXXX" class="btn small">
+    <a href="https://wa.me/216XXXXXXXX" class="btn small" id="contact-btn">
       Contact
     </a>
   </div>
@@ -36,7 +39,7 @@
     We create clean, professional websites that make customers choose you.
   </p>
 
-  <a href="https://wa.me/216XXXXXXXX" class="btn primary">
+  <a href="https://wa.me/216XXXXXXXX" class="btn primary" id="cta-btn">
     Talk With Us
   </a>
 </header>
@@ -45,20 +48,20 @@
 
   <div class="stat">
     <div class="icon">⚡</div>
-    <strong>Fast Delivery</strong>
-    <span>Launch in a few days</span>
+    <strong id="stat1-title">Fast Delivery</strong>
+    <span id="stat1-desc">Launch in a few days</span>
   </div>
 
   <div class="stat">
     <div class="icon">📱</div>
-    <strong>Mobile First</strong>
-    <span>Perfect on all devices</span>
+    <strong id="stat2-title">Mobile First</strong>
+    <span id="stat2-desc">Perfect on all devices</span>
   </div>
 
   <div class="stat">
     <div class="icon">🎯</div>
-    <strong>Client Focused</strong>
-    <span>Built to convert visitors</span>
+    <strong id="stat3-title">Client Focused</strong>
+    <span id="stat3-desc">Built to convert visitors</span>
   </div>
 
 </section>
@@ -68,18 +71,18 @@
 
   <div class="grid">
     <div class="card">
-      <h3>Website Creation</h3>
-      <p>Modern and professional design that reflects your brand.</p>
+      <h3 id="service1-title">Website Creation</h3>
+      <p id="service1-desc">Modern and professional design that reflects your brand.</p>
     </div>
 
     <div class="card">
-      <h3>Online Booking</h3>
-      <p>Let your customers reserve cars easily and quickly.</p>
+      <h3 id="service2-title">Online Booking</h3>
+      <p id="service2-desc">Let your customers reserve cars easily and quickly.</p>
     </div>
 
     <div class="card">
-      <h3>Visibility & Growth</h3>
-      <p>Help your business get found and trusted online.</p>
+      <h3 id="service3-title">Visibility & Growth</h3>
+      <p id="service3-desc">Help your business get found and trusted online.</p>
     </div>
   </div>
 </section>
@@ -88,9 +91,9 @@
   <h2 id="portfolio-title">Recent Work</h2>
 
   <div class="grid">
-    <div class="card">Luxury Cars — Tunis</div>
-    <div class="card">DriveNow — Booking Platform</div>
-    <div class="card">EcoCars — Rental Website</div>
+    <div class="card" id="portfolio1">Luxury Cars — Tunis</div>
+    <div class="card" id="portfolio2">DriveNow — Booking Platform</div>
+    <div class="card" id="portfolio3">EcoCars — Rental Website</div>
   </div>
 </section>
 
@@ -108,7 +111,7 @@
   </a>
 </section>
 
-<footer>
+<footer id="footer">
   © 2026 Bringo Tech — Professional Web Solutions
 </footer>
 
