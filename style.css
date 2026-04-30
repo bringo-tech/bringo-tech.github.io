@@ -1,10 +1,12 @@
 :root{
-  --bg:#f8fafc;
-  --primary:#2563eb;
-  --text:#0f172a;
-  --muted:#64748b;
+  --bg:#ffffff;
+  --primary:#dc2626;
+  --text:#000000;
+  --muted:#6b7280;
   --card:#ffffff;
-  --border:#e2e8f0;
+  --border:#d1d5db;
+  --dark-bg:#1f2937;
+  --accent-red:#ef4444;
 }
 
 *{
@@ -26,12 +28,91 @@ body{
   justify-content:space-between;
   align-items:center;
   padding:20px 40px;
-  background:white;
-  border-bottom:1px solid var(--border);
+  background: linear-gradient(135deg, #ffffff 0%, #fefce8 100%);
+  border-bottom:2px solid #fbbf24;
+  box-shadow: 0 2px 10px rgba(251, 191, 36, 0.1);
 }
 
 .logo{
   font-weight:700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo::before{
+  content: '⚡ + * ⚡';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: rgba(251, 191, 36, 0.3);
+  font-weight: 300;
+  letter-spacing: 8px;
+  z-index: -1;
+  animation: float 3s ease-in-out infinite;
+}
+
+.logo::after{
+  content: '✨';
+  position: absolute;
+  top: -5px;
+  right: -15px;
+  font-size: 12px;
+  color: rgba(251, 191, 36, 0.4);
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(-50%, -50%) translateY(0px); }
+  50% { transform: translate(-50%, -50%) translateY(-3px); }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.1); }
+}
+
+.logo-bringo{
+  font-size: 24px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  letter-spacing: -0.5px;
+}
+
+.logo-bringo::after{
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 200%; /* Extend to cover both Bringo and Tech */
+  height: 3px;
+  background: linear-gradient(90deg, #fbbf24 0%, #f59e0b 25%, #d97706 50%, #000000 100%);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: underlineProgress 2s ease-in-out infinite;
+}
+
+@keyframes underlineProgress {
+  0% { transform: scaleX(0); }
+  50% { transform: scaleX(0.6); } /* Reaches end of Bringo */
+  100% { transform: scaleX(1); } /* Covers full width including Tech */
+}
+
+.logo-tech{
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.3px;
+  opacity: 0.9;
 }
 
 .nav-right{
@@ -42,27 +123,65 @@ body{
 
 .nav-right button{
   border:none;
-  background:#f1f5f9;
-  padding:6px 10px;
-  border-radius:6px;
+  background: linear-gradient(135deg, #ffffff 0%, #fefce8 100%);
+  padding:8px 12px;
+  border-radius:8px;
+  color:#374151;
+  font-weight:600;
+  font-size:12px;
+  border:1px solid #fbbf24;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-right button:hover{
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  color:#000000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
+}
+
+.nav-right button:active{
+  transform: translateY(0px);
+}
+
+.nav-right button::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.nav-right button.active{
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  color:#000000;
+  box-shadow: 0 2px 8px rgba(251, 191, 36, 0.4);
 }
 
 /* HERO */
 .hero{
   text-align:center;
   padding:100px 20px;
-  background:linear-gradient(to bottom,#ffffff,#f1f5f9);
+  background:var(--dark-bg);
+  color:white;
 }
 
 .hero h1{
   font-size:42px;
   max-width:700px;
   margin:auto;
+  color:white;
 }
 
 .hero p{
   margin-top:20px;
-  color:var(--muted);
+  color:#d1d5db;
 }
 
 /* BUTTON */
@@ -76,8 +195,16 @@ body{
 }
 
 .primary{
-  background:var(--primary);
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
   color:white;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.primary:hover{
+  background: linear-gradient(135deg, #b91c1c 0%, #991b1b 100%);
+  border-color: #fbbf24;
+  box-shadow: 0 0 20px rgba(251, 191, 36, 0.3);
 }
 
 .small{
@@ -114,6 +241,8 @@ h2{
 
 .card:hover{
   transform:translateY(-5px);
+  border-color:var(--accent-red);
+  box-shadow:0 10px 25px rgba(220, 38, 38, 0.1);
 }
 
 /* STATS */
@@ -123,15 +252,39 @@ h2{
   gap:30px;
   flex-wrap:wrap;
   padding:60px 20px;
+  background: linear-gradient(135deg, #fefce8 0%, #ffffff 100%);
 }
 
 .stat{
-  background:white;
+  background: linear-gradient(135deg, #ffffff 0%, #fefce8 50%, #ffffff 100%);
   padding:25px;
   border-radius:12px;
   text-align:center;
   width:220px;
-  border:1px solid var(--border);
+  border:2px solid #fbbf24;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(251, 191, 36, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.stat:hover::before{
+  left: 100%;
+}
+
+.stat:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(251, 191, 36, 0.2);
 }
 
 .icon{
@@ -146,8 +299,31 @@ h2{
 /* CTA */
 .cta{
   text-align:center;
-  background:#eef2ff;
+  background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+  color:white;
   border-radius:12px;
+  border: 3px solid #fbbf24;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(251, 191, 36, 0.1), transparent);
+  transition: left 0.7s ease;
+}
+
+.cta:hover::before{
+  left: 100%;
+}
+
+.cta h2{
+  color:white;
 }
 
 /* FOOTER */
