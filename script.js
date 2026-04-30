@@ -103,6 +103,17 @@ function setLang(lang){
   document.getElementById("testimonial-text").innerText = translations[lang].testimonial;
   document.getElementById("cta-title").innerText = translations[lang].cta;
 
+<<<<<<< HEAD
+=======
+  // Close mobile menu when switching language
+  document.documentElement.classList.remove('nav-open');
+  const navMenu = document.querySelector('.nav-menu');
+  if (navMenu) {
+    navMenu.classList.remove('open');
+    navMenu.classList.add('closed');
+  }
+
+>>>>>>> 9522cdc (update website design)
   // Stats section
   document.getElementById("stat1-title").innerText = translations[lang].stat1_title;
   document.getElementById("stat1-desc").innerText = translations[lang].stat1_desc;
@@ -130,4 +141,27 @@ function setLang(lang){
   document.getElementById("service3-desc").innerText = translations[lang].service3_desc;
 }
 
+<<<<<<< HEAD
+=======
+function toggleMenu(){
+  const navMenu = document.querySelector('.nav-menu');
+  if (!navMenu) return;
+
+  const isOpen = navMenu.classList.contains('open');
+  navMenu.classList.toggle('open', !isOpen);
+  navMenu.classList.toggle('closed', isOpen);
+  document.documentElement.classList.toggle('nav-open', !isOpen);
+
+  const button = document.querySelector('.menu-toggle');
+  if (button) {
+    button.setAttribute('aria-expanded', String(!isOpen));
+  }
+}
+
+const menuToggleButton = document.querySelector('.menu-toggle');
+if (menuToggleButton) {
+  menuToggleButton.addEventListener('click', toggleMenu);
+}
+
+>>>>>>> 9522cdc (update website design)
 setLang("fr");
