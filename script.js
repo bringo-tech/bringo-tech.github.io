@@ -1,190 +1,203 @@
-const translations = {
-  en: {
-    title: "Build Trust. Get More Bookings. Grow Your Car Rental Business.",
-    subtitle: "We create clean, professional websites that make customers choose you.",
-    nav_services: "Services",
-    nav_work: "Work",
-    nav_contact: "Contact",
-    services: "What We Do",
-    portfolio: "Recent Work",
-    reviews: "Client Reviews",
-    testimonial: "Our clients trusted us more after launching their new website.",
-    cta: "Let’s build something professional for your business",
-    stat1_title: "Fast Delivery",
-    stat1_desc: "Launch in a few days",
-    stat2_title: "Mobile First",
-    stat2_desc: "Perfect on all devices",
-    stat3_title: "Client Focused",
-    stat3_desc: "Built to attract visitors",
-    portfolio1: "Luxury Cars — Tunis",
-    portfolio2: "DriveNow — Booking Platform",
-    portfolio3: "EcoCars — Rental Website",
-    contact_btn: "Contact",
-    cta_btn: "Talk With Us",
-    footer: "© 2026 Bringo Tech — Professional Web Solutions",
-    service1_title: "Website Creation",
-    service1_desc: "Modern and professional design that reflects your brand.",
-    service2_title: "Online Booking",
-    service2_desc: "Let your customers reserve cars easily and quickly.",
-    service3_title: "Visibility & Growth",
-    service3_desc: "Help your business get found and trusted online.",
-    contact_form_title: "Ready to get more bookings?",
-    contact_form_desc: "Share your project details and we'll craft a custom car rental website that turns visitors into loyal customers.",
-    name_label: "Your name",
-    email_label: "Email",
-    phone_label: "WhatsApp / Phone",
-    message_label: "Project details",
-    send_button: "Send Request"
-  },
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  fr: {
-    title: "Gagnez plus de réservations avec un site web professionnel",
-    subtitle: "Nous créons des sites modernes qui inspirent confiance.",
-    nav_services: "Services",
-    nav_work: "Travaux",
-    nav_contact: "Contact",
-    services: "Nos Services",
-    portfolio: "Nos Réalisations",
-    reviews: "Avis des Clients",
-    testimonial: "Nos clients nous font plus confiance après le nouveau site.",
-    cta: "Construisons quelque chose de professionnel pour votre entreprise",
-    stat1_title: "Livraison Rapide",
-    stat1_desc: "Lancement en quelques jours",
-    stat2_title: "Mobile First",
-    stat2_desc: "Parfait sur tous les appareils",
-    stat3_title: "Client Centré",
-    stat3_desc: "Conçu pour attirer les visiteurs",
-    portfolio1: "Voitures de Luxe — Tunis",
-    portfolio2: "DriveNow — Plateforme de Réservation",
-    portfolio3: "EcoCars — Site Web de Location",
-    cta_btn: "Contactez-nous",
-    footer: "© 2026 Bringo Tech — Solutions Web Professionnelles",
-    service1_title: "Création de Sites Web",
-    service1_desc: "Design moderne et professionnel qui reflète votre marque.",
-    service2_title: "Réservation en Ligne",
-    service2_desc: "Permettez à vos clients de réserver des voitures facilement et rapidement.",
-    service3_title: "Visibilité & Croissance",
-    service3_desc: "Aidez votre entreprise à être trouvée et faire confiance en ligne.",
-    cta_btn: "Contactez-nous",
-    contact_form_title: "Prêt à obtenir plus de réservations ?",
-    contact_form_desc: "Partagez les détails de votre projet et nous créerons un site web de location de voitures personnalisé qui transforme les visiteurs en clients fidèles.",
-    name_label: "Votre nom",
-    email_label: "Email",
-    phone_label: "WhatsApp / Téléphone",
-    message_label: "Détails du projet",
-    send_button: "Envoyer la demande"
-  },
+<title>Bringo Tech — Tunisia Service Business Websites</title>
 
-  ar: {
-    title: "طوّر نشاطك و احصل على المزيد من الحجوزات",
-    subtitle: "نصمم مواقع احترافية تجعل العملاء يختارونك",
-    nav_services: "الخدمات",
-    nav_work: "الأعمال",
-    nav_contact: "التواصل",
-    services: "خدماتنا",
-    portfolio: "أعمالنا",
-    reviews: "تقييمات العملاء",
-    testimonial: "زاد عدد العملاء بعد إطلاق الموقع الجديد",
-    cta: "دعنا نبني لك موقعًا احترافيًا",
-    stat1_title: "تسليم سريع",
-    stat1_desc: "إطلاق خلال أيام قليلة",
-    stat2_title: "الأولوية للهاتف",
-    stat2_desc: "مثالي على جميع الأجهزة",
-    stat3_title: "التركيز على الحريف",
-    stat3_desc: "مصمم لجذب الزوار",
-    portfolio1: "سيارات فاخرة — تونس",
-    portfolio2: "درايف ناو — منصة الحجز",
-    portfolio3: "إيكو كارز — موقع تأجير",
-    cta_btn: "اتصل بنا",
-    footer: "© 2026 برينجو تك — حلول ويب احترافية",
-    service1_title: "إنشاء مواقع الويب",
-    service1_desc: "تصميم حديث واحترافي يعكس علامتك التجارية.",
-    service2_title: "الحجز عبر الإنترنت",
-    service2_desc: "دع عملائك يحجزون السيارات بسهولة وسرعة.",
-    service3_title: "الظهور والنمو",
-    service3_desc: "ساعد عملك على أن يُكتشف ويُثق به عبر الإنترنت.",
-    contact_form_title: "جاهز للحصول على المزيد من الحجوزات؟",
-    contact_form_desc: "شارك تفاصيل مشروعك وسنصمم موقع تأجير سيارات مخصص يحول الزوار إلى عملاء مخلصين.",
-    name_label: "اسمك",
-    email_label: "البريد الإلكتروني",
-    phone_label: "واتساب / الهاتف",
-    message_label: "تفاصيل المشروع",
-    send_button: "إرسال الطلب"
-  }
-};
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-function setLang(lang){
-  document.documentElement.lang = lang;
-  document.documentElement.dir = (lang === "ar") ? "rtl" : "ltr";
+</head>
 
-  // Remove active class from all buttons
-  document.querySelectorAll('.nav-right button').forEach(btn => {
-    btn.classList.remove('active');
-  });
+<body>
 
-  // Add active class to current language button
-  const activeBtn = document.querySelector(`button[onclick="setLang('${lang}')"]`);
-  if (activeBtn) {
-    activeBtn.classList.add('active');
-  }
+<nav class="nav">
+  <div class="logo">
+    <span class="logo-bringo">Bringo</span>
+    <span class="logo-tech">Tech</span>
+  </div>
 
-  // Translate nav items
-  document.getElementById("nav-services").innerText = translations[lang].nav_services;
-  document.getElementById("nav-work").innerText = translations[lang].nav_work;
-  document.getElementById("nav-contact").innerText = translations[lang].nav_contact;
+  <div class="nav-links">
+    <a href="#services"><span id="nav-services">Services</span></a>
+    <a href="#portfolio"><span id="nav-work">Work</span></a>
+    <a href="#contact"><span id="nav-contact">Contact</span></a>
+  </div>
 
-  document.getElementById("title").innerText = translations[lang].title;
-  document.getElementById("subtitle").innerText = translations[lang].subtitle;
-  document.getElementById("services-title").innerText = translations[lang].services;
-  document.getElementById("portfolio-title").innerText = translations[lang].portfolio;
-  document.getElementById("reviews-title").innerText = translations[lang].reviews;
-  document.getElementById("testimonial-text").innerText = translations[lang].testimonial;
-  document.getElementById("cta-title").innerText = translations[lang].cta;
+  <div class="nav-right">
+    <button onclick="setLang('en')">EN</button>
+    <button onclick="setLang('fr')">FR</button>
+    <button onclick="setLang('ar')">AR</button>
+  </div>
+</nav>
 
-  // Stats section
-  document.getElementById("stat1-title").innerText = translations[lang].stat1_title;
-  document.getElementById("stat1-desc").innerText = translations[lang].stat1_desc;
-  document.getElementById("stat2-title").innerText = translations[lang].stat2_title;
-  document.getElementById("stat2-desc").innerText = translations[lang].stat2_desc;
-  document.getElementById("stat3-title").innerText = translations[lang].stat3_title;
-  document.getElementById("stat3-desc").innerText = translations[lang].stat3_desc;
+<section class="news-banner" aria-label="Service updates ticker">
+  <div class="ticker">
+    <span id="ticker-text">New: Websites for travel agencies, car rentals, hotels, restaurants, supermarkets, self-service kiosks and local service providers in Tunisia.</span>
+  </div>
+</section>
 
-  // Portfolio items
-  document.getElementById("portfolio1").innerText = translations[lang].portfolio1;
-  document.getElementById("portfolio2").innerText = translations[lang].portfolio2;
-  document.getElementById("portfolio3").innerText = translations[lang].portfolio3;
+<header class="hero">
+  <h1 id="title">
+    Websites that turn Tunisian service brands into trusted customer choices.
+  </h1>
 
-  // Buttons and footer
-  document.getElementById("cta-btn").innerText = translations[lang].cta_btn;
-  document.getElementById("footer").innerText = translations[lang].footer;
+  <p id="subtitle">
+    From car rental and travel agencies to hotels, restaurants, supermarkets and self-service stores, we build sites that inspire confidence.
+  </p>
 
-  // Services
-  document.getElementById("service1-title").innerText = translations[lang].service1_title;
-  document.getElementById("service1-desc").innerText = translations[lang].service1_desc;
-  document.getElementById("service2-title").innerText = translations[lang].service2_title;
-  document.getElementById("service2-desc").innerText = translations[lang].service2_desc;
-  document.getElementById("service3-title").innerText = translations[lang].service3_title;
-  document.getElementById("service3-desc").innerText = translations[lang].service3_desc;
+  <a href="https://wa.me/216XXXXXXXX" class="btn primary" id="cta-btn" data-text="cta_btn">
+    Talk With Us
+  </a>
+</header>
 
-  // Contact form
-  document.getElementById("contact-form-title").innerText = translations[lang].contact_form_title;
-  document.getElementById("contact-form-desc").innerText = translations[lang].contact_form_desc;
-  document.getElementById("name-label").innerText = translations[lang].name_label;
-  document.getElementById("email-label").innerText = translations[lang].email_label;
-  document.getElementById("phone-label").innerText = translations[lang].phone_label;
-  document.getElementById("message-label").innerText = translations[lang].message_label;
-  document.getElementById("send-button").innerText = translations[lang].send_button;
-}
+<section class="stats">
 
-document.querySelector('.contact-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const phone = document.getElementById('phone').value;
-  const message = document.getElementById('message').value;
-  const text = `Hello! I'm ${name}. Email: ${email}. Phone: ${phone}. Project: ${message}`;
-  const url = `https://wa.me/216XXXXXXXX?text=${encodeURIComponent(text)}`;
-  window.open(url, '_blank');
-});
+  <div class="stat">
+    <div class="icon">⚡</div>
+    <strong id="stat1-title">Fast Delivery</strong>
+    <span id="stat1-desc">Launch in a few days</span>
+  </div>
 
-setLang("fr");
+  <div class="stat">
+    <div class="icon">📱</div>
+    <strong id="stat2-title">Mobile First</strong>
+    <span id="stat2-desc">Perfect on all devices</span>
+  </div>
+
+  <div class="stat">
+    <div class="icon">🎯</div>
+    <strong id="stat3-title">Client Focused</strong>
+    <span id="stat3-desc">Built to attract visitors</span>
+  </div>
+
+</section>
+
+<section id="services">
+  <h2 id="services-title">What We Do</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3 id="service1-title">Service Business Websites</h3>
+      <p id="service1-desc">Elegant sites for travel agencies, car rentals, hotels, restaurants and local services.</p>
+    </div>
+
+    <div class="card">
+      <h3 id="service2-title">Online Booking & Sales</h3>
+      <p id="service2-desc">Reservation systems, delivery menus, self-service kiosks and retail checkout experiences.</p>
+    </div>
+
+    <div class="card">
+      <h3 id="service3-title">Trusted Local Growth</h3>
+      <p id="service3-desc">Design, speed and local credibility that turn visitors into paying customers.</p>
+    </div>
+</section>
+
+<section class="work-section">
+  <div class="section-head">
+    <h2 id="work-title">Our Work</h2>
+    <p class="work-intro" id="work-intro">Trusted websites for Tunisian service businesses with strong online presence.</p>
+  </div>
+  <div class="work-grid">
+    <article class="project-card">
+      <div class="project-header">
+        <div class="project-stars">★★★★★</div>
+        <div class="project-reviews">4.7 Google Maps</div>
+      </div>
+      <h3 id="portfolio1">Premium Travel Agency</h3>
+      <p class="project-meta" id="meta_karim">Karim</p>
+    </article>
+
+    <article class="project-card">
+      <div class="project-header">
+        <div class="project-stars">★★★★☆</div>
+        <div class="project-reviews">4.5 Google Maps</div>
+      </div>
+      <h3 id="portfolio2">City Restaurant Group</h3>
+      <p class="project-meta" id="meta_nourhene">Nourhene</p>
+    </article>
+
+    <article class="project-card">
+      <div class="project-header">
+        <div class="project-stars">★★★★☆</div>
+        <div class="project-reviews">4.3 Google Maps</div>
+      </div>
+      <h3 id="portfolio3">Hotel Boutique</h3>
+      <p class="project-meta" id="meta_zied">Zied</p>
+    </article>
+
+    <article class="project-card">
+      <div class="project-header">
+        <div class="project-stars">★★★★★</div>
+        <div class="project-reviews">4.6 Google Maps</div>
+      </div>
+      <h3 id="portfolio4">Modern Car Rental</h3>
+      <p class="project-meta" id="meta_walid">Walid</p>
+    </article>
+
+    <article class="project-card">
+      <div class="project-header">
+        <div class="project-stars">★★★★☆</div>
+        <div class="project-reviews">4.1 Google Maps</div>
+      </div>
+      <h3 id="portfolio5">Supermarket Chain</h3>
+      <p class="project-meta" id="meta_samir">Samir</p>
+    </article>
+  </div>
+</section>
+
+<section class="testimonial">
+  <h2 id="reviews-title">What Our Clients Say</h2>
+
+  <p id="testimonial-text">More bookings, more trust, more growth — that's what our clients experience.</p>
+</section>
+<section class="cta">
+  <h2 id="cta-title">Let’s build something professional for your business</h2>
+
+  <a href="https://wa.me/216XXXXXXXX" class="btn primary" id="cta-whatsapp">Contact on WhatsApp</a>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="contact-grid">
+    <div class="contact-copy">
+      <h2 id="contact-form-title">Ready to turn visitors into clients?</h2>
+      <p id="contact-form-desc">Share your business details and we’ll craft a custom Tunisian service website that earns trust and increases bookings.</p>
+    </div>
+
+    <form class="contact-form">
+      <div class="input-group">
+        <label id="name-label" for="name">Your name</label>
+        <input id="name" type="text" placeholder="e.g. Med" />
+      </div>
+      <div class="input-group">
+        <label id="email-label" for="email">Email</label>
+        <input id="email" type="email" placeholder="you@example.com" />
+      </div>
+      <div class="input-group">
+        <label id="phone-label" for="phone">WhatsApp / Phone</label>
+        <input id="phone" type="tel" placeholder="+216 1234 5678" />
+      </div>
+      <div class="input-group">
+        <label id="message-label" for="message">Project details</label>
+        <textarea id="message" rows="4" placeholder="Tell us what you need..."></textarea>
+      </div>
+      <button id="send-button" type="submit" class="btn primary contact-submit">Send Request</button>
+    </form>
+  </div>
+</section>
+
+<footer id="footer">
+  © 2026 Bringo Tech — Professional Web Solutions
+</footer>
+
+<script src="script.js"></script>
+
+<!-- Tidio live chat widget -->
+<script src="https://code.tidio.co/zbhvchicvniwrcifmfncamamfjjipmk0.js" async></script>
+
+<!-- Chatbot.com Widget -->
+<script type="text/javascript" src="https://cdn.chatbot.com/widget/plugin.js" data-cfasync="false" data-id="YOUR_CHATBOT_ID" data-lang="ar"></script>
+
+</body>
+</html>
