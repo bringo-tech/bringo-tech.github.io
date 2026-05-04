@@ -11,6 +11,14 @@ const translations = {
     work_intro: "Trusted websites for Tunisian service businesses with strong online presence.",
     reviews: "What Our Clients Say",
     testimonial: "More bookings, more trust, more growth — that's what our clients experience.",
+    review1_text: "\"Travel bookings increased by 45% thanks to a fast, beautiful website built with real expertise.\"",
+    review1_role: "Travel Agency Owner",
+    review2_text: "\"Our restaurant's reservations transformed completely — the clean design and easy booking system made all the difference.\"",
+    review2_role: "Restaurant Manager",
+    review3_text: "\"The team's work significantly improved our online visibility — the professional design speaks volumes.\"",
+    review3_role: "Hotel Owner",
+    review4_text: "\"Thanks to the team's expertise, our website truly represents our brand's professionalism.\"",
+    review4_role: "Car Rental Director",
     cta: "Let's build something professional for your business",
     cta_whatsapp: "Contact on WhatsApp",
     stat1_title: "Fast Delivery",
@@ -21,11 +29,11 @@ const translations = {
     stat3_desc: "Built to attract visitors",
     portfolio1: "Premium Travel Agency",
     portfolio2: "City Restaurant Group",
-    portfolio3: "Hotel Boutique",
+    portfolio3: "Hotel",
     portfolio4: "Modern Car Rental",
     portfolio5: "Supermarket Chain",
     meta_karim: "Karim",
-    meta_nourhene: "Nourhene",
+    meta_abderrahmane: "Abderrahmane",
     meta_zied: "Zied",
     meta_walid: "Walid",
     meta_samir: "Samir",
@@ -59,6 +67,14 @@ const translations = {
     work_intro: "Sites fiables pour les entreprises de services tunisiennes avec une forte présence en ligne.",
     reviews: "Ce que disent nos clients",
     testimonial: "Plus de réservations, plus de confiance, plus de croissance — c'est ce que nos clients découvrent.",
+    review1_text: "\"Les réservations de voyage ont augmenté de 45% grâce à un site rapide et magnifique conçu avec un vrai savoir-faire.\"",
+    review1_role: "Propriétaire d'agence de voyage",
+    review2_text: "\"Les réservations de notre restaurant se sont transformées complètement — le design épuré et le système de réservation facile ont fait toute la différence.\"",
+    review2_role: "Gérant de restaurant",
+    review3_text: "\"Le travail de l'équipe a considérablement amélioré notre visibilité en ligne — le design professionnel en dit long.\"",
+    review3_role: "Propriétaire d'hôtel",
+    review4_text: "\"Grâce à l'expertise de l'équipe, notre site web représente vraiment le professionnalisme de notre marque.\"",
+    review4_role: "Directrice de location de voitures",
     cta: "Construisons quelque chose de professionnel pour votre entreprise",
     cta_whatsapp: "Contactez-nous via WhatsApp",
     stat1_title: "Livraison Rapide",
@@ -69,11 +85,11 @@ const translations = {
     stat3_desc: "Conçu pour attirer les visiteurs",
     portfolio1: "Agence de Voyage Premium",
     portfolio2: "Groupe de Restaurants en Ville",
-    portfolio3: "Hôtel Boutique",
+    portfolio3: "Hôtel",
     portfolio4: "Location de Voitures Modernes",
     portfolio5: "Chaîne de Supermarchés",
     meta_karim: "Karim",
-    meta_nourhene: "Nourhène",
+    meta_abderrahmane: "Abderrahmane",
     meta_zied: "Zied",
     meta_walid: "Walid",
     meta_samir: "Samir",
@@ -97,7 +113,7 @@ const translations = {
 
   ar: {
     ticker_text: "جديد: مواقع ويب لوكالات السفر وتأجير السيارات والفنادق والمطاعم والسوبرماركت والخدمات الذاتية ومزودي الخدمات المحليين في تونس.",
-    title: "اجذب العملاء لنشاطك الخدمي في تونس بثقة عالية.",
+    title: "اجذب الحرفاء لنشاطك الخدمي في تونس بثقة عالية.",
     subtitle: "نصمم مواقع للشركات السياحية، المطاعم، الفنادق، المتاجر والخدمات الذاتية.",
     nav_services: "الخدمات",
     nav_work: "الأعمال",
@@ -107,6 +123,14 @@ const translations = {
     work_intro: "مواقع موثوقة لشركات الخدمات التونسية ذات حضور قوي على الإنترنت.",
     reviews: "ما يقول عملاؤنا",
     testimonial: "حجوزات أكثر، ثقة أعلى، نمو أسرع — هذا ما يختبره عملاؤنا.",
+    review1_text: "\"زادت حجوزات السفر بنسبة 45% بفضل موقع سريع وجميل صُمم بخبرة حقيقية.\"",
+    review1_role: "صاحب وكالة أسفار",
+    review2_text: "\"تحولت حجوزات مطعمنا تماماً — التصميم النظيف ونظام الحجز السهل أحدثا فرقاً كبيراً.\"",
+    review2_role: "مدير مطعم",
+    review3_text: "\"حسّن عمل الفريق من رؤيتنا على الإنترنت بشكل كبير — التصميم الاحترافي يتحدث بصراحة.\"",
+    review3_role: "صاحب فندق",
+    review4_text: "\"بفضل خبرة الفريق، موقعنا يمثل حقاً احترافية علامتنا التجارية.\"",
+    review4_role: "مديرة تأجير سيارات",
     cta: "دعنا نبني لك موقعًا احترافيًا",
     cta_whatsapp: "اتصل بنا عبر واتساب",
     stat1_title: "تسليم سريع",
@@ -115,13 +139,13 @@ const translations = {
     stat2_desc: "مثالي على جميع الأجهزة",
     stat3_title: "التركيز على الحريف",
     stat3_desc: "مصمم لجذب الزوار",
-    portfolio1: "وكالة سفر فاخرة",
+    portfolio1: "وكالة أسفار",
     portfolio2: "مجموعة مطاعم المدينة",
-    portfolio3: "فندق بوتيك",
-    portfolio4: "تأجير السيارات الحديث",
+    portfolio3: "فندق",
+    portfolio4: "وكالة لتأجير السيارات",
     portfolio5: "سلسلة السوبرماركت",
     meta_karim: "كريم",
-    meta_nourhene: "نورهين",
+    meta_abderrahmane: "عبد الرحمن",
     meta_zied: "زياد",
     meta_walid: "وليد",
     meta_samir: "سمير",
@@ -133,7 +157,7 @@ const translations = {
     service2_desc: "أنظمة حجز، قوائم طلبات وخدمات نقاط بيع للعملاء المحليين.",
     service3_title: "المصداقية والنمو المحلي",
     service3_desc: "تصميم سريع وموثوق يحوّل الزوار إلى عملاء فعليين.",
-    contact_form_title: "جاهز لجذب المزيد من العملاء؟",
+    contact_form_title: "جاهز لجذب المزيد من الحرفاء؟",
     contact_form_desc: "شارك تفاصيل مشروعك وسنصمم موقع خدمة تونسي يبني الثقة ويزيد المبيعات.",
     name_label: "اسمك",
     email_label: "البريد الإلكتروني",
@@ -142,6 +166,36 @@ const translations = {
     send_button: "إرسال الطلب"
   }
 };
+
+let reviewCarouselIndex = 0;
+let reviewCarouselInterval = null;
+
+function startReviewCarousel() {
+  const cards = document.querySelectorAll('.testimonial .review-card');
+  if (!cards.length) return;
+
+  cards.forEach((card, index) => {
+    card.classList.toggle('active', index === reviewCarouselIndex);
+  });
+
+  if (reviewCarouselInterval) {
+    clearInterval(reviewCarouselInterval);
+  }
+
+  reviewCarouselInterval = setInterval(() => {
+    reviewCarouselIndex = (reviewCarouselIndex + 1) % cards.length;
+    cards.forEach((card, index) => {
+      card.classList.toggle('active', index === reviewCarouselIndex);
+    });
+  }, 5000);
+}
+
+function stopReviewCarousel() {
+  if (reviewCarouselInterval) {
+    clearInterval(reviewCarouselInterval);
+    reviewCarouselInterval = null;
+  }
+}
 
 function setLang(lang){
   document.documentElement.lang = lang;
@@ -213,8 +267,8 @@ function setLang(lang){
   const mk = document.getElementById("meta_karim");
   if (mk) mk.innerText = translations[lang].meta_karim;
   
-  const mn = document.getElementById("meta_nourhene");
-  if (mn) mn.innerText = translations[lang].meta_nourhene;
+  const ma = document.getElementById("meta_abderrahmane");
+  if (ma) ma.innerText = translations[lang].meta_abderrahmane;
   
   const mz = document.getElementById("meta_zied");
   if (mz) mz.innerText = translations[lang].meta_zied;
@@ -228,6 +282,15 @@ function setLang(lang){
   // Testimonial section
   document.getElementById("reviews-title").innerText = translations[lang].reviews;
   document.getElementById("testimonial-text").innerText = translations[lang].testimonial;
+  document.getElementById("review1-text").innerText = translations[lang].review1_text;
+  document.getElementById("review1-role").innerText = translations[lang].review1_role;
+  document.getElementById("review2-text").innerText = translations[lang].review2_text;
+  document.getElementById("review2-role").innerText = translations[lang].review2_role;
+  document.getElementById("review3-text").innerText = translations[lang].review3_text;
+  document.getElementById("review3-role").innerText = translations[lang].review3_role;
+  document.getElementById("review4-text").innerText = translations[lang].review4_text;
+  document.getElementById("review4-role").innerText = translations[lang].review4_role;
+  startReviewCarousel();
 
   // CTA section
   document.getElementById("cta-title").innerText = translations[lang].cta;
