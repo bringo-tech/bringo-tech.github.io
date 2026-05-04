@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<meta name="theme-color" content="#dc2626">
+<meta name="description" content="Professional web design agency for Tunisian service businesses - travel agencies, car rentals, hotels, restaurants, and supermarkets.">
 
 <title>Bringo Tech — Tunisia Service Business Websites</title>
 
@@ -13,22 +15,24 @@
 
 <body>
 
-<nav class="nav">
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav class="nav" role="navigation" aria-label="Main navigation">
   <div class="logo">
     <span class="logo-bringo">Bringo</span>
     <span class="logo-tech">Tech</span>
   </div>
 
   <div class="nav-links">
-    <a href="#services"><span id="nav-services">Services</span></a>
-    <a href="#portfolio"><span id="nav-work">Work</span></a>
-    <a href="#contact"><span id="nav-contact">Contact</span></a>
+    <a href="#services" aria-label="Go to services section"><span id="nav-services">Services</span></a>
+    <a href="#portfolio" aria-label="Go to portfolio section"><span id="nav-work">Work</span></a>
+    <a href="#contact" aria-label="Go to contact section"><span id="nav-contact">Contact</span></a>
   </div>
 
-  <div class="nav-right">
-    <button onclick="setLang('en')">EN</button>
-    <button onclick="setLang('fr')">FR</button>
-    <button onclick="setLang('ar')">AR</button>
+  <div class="nav-right" role="group" aria-label="Language selection">
+    <button onclick="setLang('en')" aria-label="Switch to English">EN</button>
+    <button onclick="setLang('fr')" aria-label="Switch to French">FR</button>
+    <button onclick="setLang('ar')" aria-label="Switch to Arabic">AR</button>
   </div>
 </nav>
 
@@ -38,7 +42,7 @@
   </div>
 </section>
 
-<header class="hero">
+<header class="hero" id="main-content">
   <h1 id="title">
     Websites that turn Tunisian service brands into trusted customer choices.
   </h1>
@@ -47,89 +51,87 @@
     From car rental and travel agencies to hotels, restaurants, supermarkets and self-service stores, we build sites that inspire confidence.
   </p>
 
-  <a href="https://wa.me/216XXXXXXXX" class="btn primary" id="cta-btn" data-text="cta_btn">
+  <a href="https://wa.me/216XXXXXXXX" class="btn primary" id="cta-btn" data-text="cta_btn" aria-label="Contact us on WhatsApp">
     Talk With Us
   </a>
 </header>
 
-<section class="stats">
-
-  <div class="stat">
-    <div class="icon">⚡</div>
+<section class="stats" aria-label="Key features">
+  <div class="stat" role="article" aria-labelledby="stat1-title">
+    <div class="icon" aria-hidden="true">⚡</div>
     <strong id="stat1-title">Fast Delivery</strong>
     <span id="stat1-desc">Launch in a few days</span>
   </div>
 
-  <div class="stat">
-    <div class="icon">📱</div>
+  <div class="stat" role="article" aria-labelledby="stat2-title">
+    <div class="icon" aria-hidden="true">📱</div>
     <strong id="stat2-title">Mobile First</strong>
     <span id="stat2-desc">Perfect on all devices</span>
   </div>
 
-  <div class="stat">
-    <div class="icon">🎯</div>
+  <div class="stat" role="article" aria-labelledby="stat3-title">
+    <div class="icon" aria-hidden="true">🎯</div>
     <strong id="stat3-title">Client Focused</strong>
     <span id="stat3-desc">Built to attract visitors</span>
   </div>
-
 </section>
 
-<section id="services">
+<section id="services" aria-labelledby="services-title">
   <h2 id="services-title">What We Do</h2>
 
   <div class="grid">
-    <div class="card">
+    <article class="card" role="article" aria-labelledby="service1-title">
       <h3 id="service1-title">Service Business Websites</h3>
       <p id="service1-desc">Elegant sites for travel agencies, car rentals, hotels, restaurants and local services.</p>
-    </div>
+    </article>
 
-    <div class="card">
+    <article class="card" role="article" aria-labelledby="service2-title">
       <h3 id="service2-title">Online Booking & Sales</h3>
       <p id="service2-desc">Reservation systems, delivery menus, self-service kiosks and retail checkout experiences.</p>
-    </div>
+    </article>
 
-    <div class="card">
+    <article class="card" role="article" aria-labelledby="service3-title">
       <h3 id="service3-title">Trusted Local Growth</h3>
       <p id="service3-desc">Design, speed and local credibility that turn visitors into paying customers.</p>
-    </div>
+    </article>
 </section>
 
-<section id="portfolio" class="work-section">
+<section id="portfolio" class="work-section" aria-labelledby="work-title">
   <div class="section-head">
     <h2 id="work-title">Our Work</h2>
     <p class="work-intro" id="work-intro">Shining examples of our work: Award-winning websites that have transformed Tunisian service businesses into online success stories.</p>
   </div>
   <div class="work-grid">
-    <article class="project-card">
+    <article class="project-card" role="article" aria-labelledby="portfolio1">
       <div class="project-header">
-        <div class="project-stars">★★★★★</div>
+        <div class="project-stars" aria-label="4.7 star rating">★★★★★</div>
         <div class="project-reviews">4.7 Google Maps • 127 reviews</div>
       </div>
       <h3 id="portfolio1">Premium Travel Agency</h3>
       <p class="project-desc">Increased bookings by 45% with a fast, beautiful website that builds trust.</p>
     </article>
 
-    <article class="project-card">
+    <article class="project-card" role="article" aria-labelledby="portfolio2">
       <div class="project-header">
-        <div class="project-stars">★★★☆☆</div>
+        <div class="project-stars" aria-label="3.8 star rating">★★★☆☆</div>
         <div class="project-reviews">3.8 Google Maps • 89 reviews</div>
       </div>
       <h3 id="portfolio2">City Restaurant Group</h3>
       <p class="project-desc">Transformed reservation management with clean design and easy booking system.</p>
     </article>
 
-    <article class="project-card">
+    <article class="project-card" role="article" aria-labelledby="portfolio3">
       <div class="project-header">
-        <div class="project-stars">★★★★☆</div>
+        <div class="project-stars" aria-label="4.3 star rating">★★★★☆</div>
         <div class="project-reviews">4.3 Google Maps • 156 reviews</div>
       </div>
       <h3 id="portfolio3">Hotel</h3>
       <p class="project-desc">Significantly improved online visibility with professional, fast-loading design.</p>
     </article>
 
-    <article class="project-card">
+    <article class="project-card" role="article" aria-labelledby="portfolio4">
       <div class="project-header">
-        <div class="project-stars">★★★★★</div>
+        <div class="project-stars" aria-label="4.6 star rating">★★★★★</div>
         <div class="project-reviews">4.6 Google Maps • 203 reviews</div>
       </div>
       <h3 id="portfolio4">Modern Car Rental</h3>
@@ -138,38 +140,38 @@
   </div>
 </section>
 
-<section class="testimonial">
+<section class="testimonial" aria-labelledby="reviews-title">
   <h2 id="reviews-title">What Our Clients Say</h2>
 
   <p id="testimonial-text">More bookings, more trust, more growth — that's what our clients experience.</p>
   
   <div class="reviews-grid">
-    <div class="review-card">
-      <div class="review-header">
+    <div class="review-card" role="article" aria-labelledby="review1-header">
+      <div class="review-header" id="review1-header">
         <strong>Ahmed Mnaoui</strong>
       </div>
       <p class="review-text" id="review1-text">"Increased travel bookings by 45% with a fast, beautiful website."</p>
       <span class="review-date" id="review1-role">Travel Agency Owner</span>
     </div>
 
-    <div class="review-card">
-      <div class="review-header">
+    <div class="review-card" role="article" aria-labelledby="review2-header">
+      <div class="review-header" id="review2-header">
         <strong>Fatima Khalil</strong>
       </div>
       <p class="review-text" id="review2-text">"Transformed restaurant reservations with clean design and easy booking."</p>
       <span class="review-date" id="review2-role">Restaurant Manager</span>
     </div>
 
-    <div class="review-card">
-      <div class="review-header">
+    <div class="review-card" role="article" aria-labelledby="review3-header">
+      <div class="review-header" id="review3-header">
         <strong>Mohamed Rhaiem</strong>
       </div>
       <p class="review-text" id="review3-text">"Significantly improved hotel online visibility with professional results."</p>
       <span class="review-date" id="review3-role">Hotel Owner</span>
     </div>
 
-    <div class="review-card">
-      <div class="review-header">
+    <div class="review-card" role="article" aria-labelledby="review4-header">
+      <div class="review-header" id="review4-header">
         <strong>Assil Ben Salem</strong>
       </div>
       <p class="review-text" id="review4-text">"Thanks to the team's expertise, our website truly represents our brand's professionalism."</p>
@@ -190,24 +192,24 @@
       <p id="contact-form-desc">Share your business details and we’ll craft a custom Tunisian service website that earns trust and increases bookings.</p>
     </div>
 
-    <form class="contact-form">
+    <form class="contact-form" novalidate role="form" aria-labelledby="contact-form-title">
       <div class="input-group">
         <label id="name-label" for="name">Your name</label>
-        <input id="name" type="text" placeholder="e.g. Med" />
+        <input id="name" type="text" placeholder="e.g. Med" autocomplete="name" required aria-describedby="name-label" />
       </div>
       <div class="input-group">
         <label id="email-label" for="email">Email</label>
-        <input id="email" type="email" placeholder="you@example.com" />
+        <input id="email" type="email" placeholder="you@example.com" autocomplete="email" required aria-describedby="email-label" />
       </div>
       <div class="input-group">
         <label id="phone-label" for="phone">WhatsApp / Phone</label>
-        <input id="phone" type="tel" placeholder="+216 1234 5678" />
+        <input id="phone" type="tel" placeholder="+216 1234 5678" autocomplete="tel" required aria-describedby="phone-label" />
       </div>
       <div class="input-group">
         <label id="message-label" for="message">Project details</label>
-        <textarea id="message" rows="4" placeholder="Tell us what you need..."></textarea>
+        <textarea id="message" rows="4" placeholder="Tell us what you need..." required aria-describedby="message-label"></textarea>
       </div>
-      <button id="send-button" type="submit" class="btn primary contact-submit">Send Request</button>
+      <button id="send-button" type="submit" class="btn primary contact-submit" aria-describedby="send-button">Send Request</button>
     </form>
   </div>
 </section>
