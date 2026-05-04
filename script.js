@@ -316,13 +316,55 @@ function setLang(lang){
 
 document.querySelector('.contact-form').addEventListener('submit', function(e) {
   e.preventDefault();
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const phone = document.getElementById('phone').value;
-  const message = document.getElementById('message').value;
+
+  const form = e.target;
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  // Basic validation
+  if (!name || !email || !phone || !message) {
+    alert('Please fill in all required fields.');
+    return;
+  }
+
+  // Email validation
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert('Please enter a valid email address.');
+    return;
+  }
+
+  // Phone validation (basic Tunisian number check)
+  const phoneRegex = /^(\+216|0)?[0-9]{8}$/;
+  if (!phoneRegex.test(phone.replace(/\s/g, ''))) {
+    alert('Please enter a valid phone number.');
+    return;
+  }
+
   const text = `Hello! I'm ${name}. Email: ${email}. Phone: ${phone}. Project: ${message}`;
   const url = `https://wa.me/216XXXXXXXX?text=${encodeURIComponent(text)}`;
-  window.open(url, '_blank');
+
+  // Open WhatsApp with error handling
+  try {
+    window.open(url, '_blank');
+  } catch (error) {
+    console.error('Failed to open WhatsApp:', error);
+    // Fallback: copy to clipboard
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Message copied to clipboard. Please paste it in WhatsApp.');
+      });
+    } else {
+      alert('Please contact us directly at +216XXXXXXXX');
+    }
+  }
 });
 
 setLang("fr");
+
+function resetButton(button, text) {
+  button.textContent = text;
+  button.disabled = false;
+}
